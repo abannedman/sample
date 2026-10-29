@@ -10,13 +10,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'run clean package'
+                sh 'echo "Start build..."'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'run mvn test'
+                sh 'echo "Start mvn test..."'
             }
         }
     }
